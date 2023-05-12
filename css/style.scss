@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #7870ab;
+    justify-content: center;
+}
+.contenedor{
+    position: relative;
+    width: 600px;
+    height: 650px;
+    background: #191830;
+    margin: 20px;
+    border-radius: 25px;
+}
+.encriptar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #7870ab;
+    textarea{
+        border-radius: 10px;
+        width: 500px;
+        height: 500px;
+        background: #191830;
+        color: #fff;
+        outline: none;
+        border: none;
+        resize: none;
+        padding: 10px;
+        font-size: 25px;
+        border-top: 1px solid #7870ab;
+        border-bottom: 1px solid #7870ab;
+        &::placeholder{
+            font-size: 25px;
+        }
+    }
+}
+.botones{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    p{
+        color: #fff;
+        margin-left: 150px;
+    }
+    .botonesDec{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        button{
+            margin-right: 20px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            background: #7870ab;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.25s ease-in-out;
+            &:hover{
+                transform: translateY(-2px);
+                background-color: #1787bb;
+            }
+        }
+    }
+}
+.notificacion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 650px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin: 20px;
+    img{
+        max-width: 200px;
+        border-top: 1px solid #7870ab;
+        border-bottom: 1px solid #7870ab;
+        padding: 20px;
+    }
+    .notEncriptado{
+        margin: 70px 30px;
+    }
+}
+@media (max-width: 57.6em){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .contenedor{
+        width: 90%;
+        max-height: 400px;
+        top: 40px;
+        .encriptar textarea{
+            max-height: 200px;
+        }
+    }
+    .botones p{
+        margin-left: 85px;
+    }
+    .notificacion{
+        width: 90%;
+        max-height: 200px;
+        img{
+            border: none;
+            width: 20%;
+        }
+        .notEncriptado{
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptado y Desencriptado | De texto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/bloqueado.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="encriptar">
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <div class="botones">
+            <p>Usa la funcion que necesitas</p>
+            <div class="botonesDec">
+                <button class="botonEncriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="botonDesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+    <div class="notificacion">
+        <img src="./img/buscar.png" alt="buscar" id="notImagen">
+        <div class="notEncriptado" id="notEncriptado">
+            <h2 id="notMensaje">No hay mensaje</h2>
+            <p id="notParrafo">Cree un mensaje para encriptar o desencriptar</p>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

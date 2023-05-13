@@ -59,15 +59,16 @@ body {
 }
 .botones p {
   color: #fff;
-  margin-left: 150px;
+  display: flex;
+  justify-content: center;
 }
 .botones .botonesDec {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
 }
 .botones .botonesDec button {
-  margin-right: 20px;
+  margin: 0 5px;
   padding: 15px 30px;
   border-radius: 25px;
   background: #7870ab;
@@ -114,14 +115,19 @@ body {
   }
   .contenedor {
     width: 90%;
-    max-height: 400px;
+    max-height: 350px;
     top: 40px;
   }
   .contenedor .encriptar textarea {
     max-height: 200px;
   }
+  .botones {
+    display: flex;
+    justify-content: center;
+  }
   .botones p {
-    margin-left: 85px;
+    display: flex;
+    justify-content: center;
   }
   .notificacion {
     width: 90%;

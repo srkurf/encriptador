@@ -104,6 +104,12 @@ body {
 .notificacion .notEncriptado {
   margin: 70px 30px;
 }
+.notificacion .notEncriptado h2 {
+  margin-left: 10%;
+}
+.notificacion .notEncriptado p {
+  margin-left: 15%;
+}
 
 @media (max-width: 57.6em) {
   body {
@@ -139,5 +145,8 @@ body {
   }
   .notificacion .notEncriptado {
     margin: 0;
+  }
+  .notificacion .notEncriptado h2 {
+    margin-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
